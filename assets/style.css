@@ -209,8 +209,8 @@ body {
 
 .profile-photo {
   display: block;
-  width: 108px;
-  height: 108px;
+  width: 176px;
+  height: 176px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 0 20px;
