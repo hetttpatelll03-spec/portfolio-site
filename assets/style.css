@@ -207,6 +207,23 @@ body {
   66% { transform: translate(-24px, 18px) scale(0.94); }
 }
 
+.profile-photo {
+  display: block;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 20px;
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 3px var(--accent), 0 10px 30px -10px var(--accent-2), var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 0 0 3px var(--accent-2), 0 14px 34px -10px var(--accent-2), var(--shadow);
+}
+
 .hero-eyebrow {
   margin: 0 0 4px;
   color: var(--accent);
@@ -469,7 +486,8 @@ body {
   .project-card,
   .btn,
   .theme-toggle,
-  .skill-group {
+  .skill-group,
+  .profile-photo {
     transition: none;
   }
 }
